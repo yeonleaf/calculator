@@ -1,0 +1,36 @@
+table {
+    border-collapse: collapse;
+    font-size: 30px;
+    position: relative;
+    padding: 5%;
+    top: 15px;
+    
+}
+
+td {
+    padding: 5px 10px;
+    text-align: center;
+    width: 60px;
+    height: 35px;
+}
+
+.tdNum:hover {
+    transition: font-size 0.1s, color 0.1s, background-color 0.1s;
+    color: rgb(38, 255, 67);
+    background-color:#fa9d8d;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+.tbClass {
+    text-align: right;
+    border: none;
+    width: 270px;
+    height: 30px;
+    font-size: 25px;
+}
+
+.tbClass:focus{
+    outline: none;
+}
+

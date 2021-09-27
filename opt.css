@@ -1,0 +1,40 @@
+.box3-1,
+.box3-2 {
+    display: none;   
+}
+
+.box3-1 {
+    width: 450px;
+}
+
+.box3-2 {
+    width: 300px;
+}
+
+.optTitle {
+    font-size: 25px;
+    
+}
+li.optName {
+    list-style: none;
+}
+
+
+
+
+.optOn {
+    font-size: 20px;
+    color: #4727fc;
+    background-color: #dfe6e9;
+    display: block;
+    position:absolute;
+    left: 20%;
+    top: 30%;
+    border: 3px dotted #4727fc;
+
+
+}
+
+.optOff {
+    display: none;
+}

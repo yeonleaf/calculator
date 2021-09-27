@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="menu.css" />
+    <link rel="stylesheet" type="text/css" href="cal.css" />
+    <link rel="stylesheet" type="text/css" href="price.css" />
+    <link rel="stylesheet" type="text/css" href="opt.css" />
+    <link href="https://fonts.googleapis.com/css?family=Gugi|Roboto+Condensed&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="template">
+
+    <!-- 0. Title
+    <div id="idTitle">체심도 스리랑카 카페</div> -->
+        
+    
+    <!-- 1. Menu -->
+    <div id="idMenu" class = "box1"> 
+
+    <div class = middleTitle>
+    Menu
+    </div>
+
+    <ul class="menuTitle Bev">
+        <div class="menuName">Beverage</div>
+
+        <li class="menuContent">
+            <div>
+                <button class="menuBtn clickBev" id="americano">AMERICANO 1000원</button>
+            </div>
+        </li>
+
+        <li class="menuContent">
+            <div>
+                <button class="menuBtn clickBev" id="latte">LATTE 2500원</button>
+            </div>  
+        </li>
+
+        <li class="menuContent">
+            <div>
+                <button class="menuBtn clickBev" id="beer">BEER 3000원</button>
+            </div>  
+        </li>
+    </ul>
+
+    <ul class="menuTitle Food">
+        <div class="menuName">Food</div>
+
+        <li class="menuContent">
+            <div>
+                <button class="menuBtn clickFood" id="nasi">나시고랭 8000원</button>
+            </div> 
+        </li>
+        <li class="menuContent">
+            <div>
+                <button class="menuBtn clickFood" id="mi">미고랭 8000원</button>
+            </div> 
+        </li>
+        <li class="menuContent">
+            <div>
+                <button class="menuBtn clickFood" id="satte">사떼 5000원</button>
+            </div> 
+        </li>
+    </ul>
+
+    <ul class="menuTitle Dessert">
+        <div class="menuName">Dessert</div>
+
+        <li class="menuContent">
+            <div>
+                <button class="menuBtnDessert" id="tira">티라미수 5600원</button>
+            </div> 
+        </li>
+        <li class="menuContent">
+            <div>
+                <button class="menuBtnDessert" id="waf">와플 4000원</button>
+            </div> 
+        </li>
+        <li class="menuContent">
+             <div>
+                <button class="menuBtnDessert" id="ice">아이스크림 3000원</button>
+            </div> 
+        </li>
+    </ul>
+    </div>
+
+    <!-- 1-1. Set. -->
+    <div id="idSetMenu" class = "box2">
+        <div class="setName">SET MENU : Beverage + Food + Dessert 10% Discount!</div>
+    </div>
+
+    <!-- 1-2. Opt. -->
+    <div id="idOption" class = "box3-1">
+    <ol class="optMenu">
+        <div class="optTitle">Beverage Option</div>
+        <li class="optName">
+            Hot +0
+            <input class="optCheck" id="hot" type="checkbox">
+            Cold +500
+            <input class="optCheck" id="cold" type="checkbox">
+        </li>
+        <li class="optName">
+            샷추가(+1) +500
+            <input class="optCheck" id="+1" type="checkbox">
+            샷추가(+2) +1000
+            <input class="optCheck" id="+2" type="checkbox">
+        </li>
+        <li class="optName">
+            맥주주문시 감자튀김 +3000
+            <input class="optCheck" id="potato" type="checkbox">
+        </li>
+        <li class="optName">
+            <input class="optCheck" id="OK" type="button" value="OK!">
+        </li>
+    </ol>
+    </div>
+
+    <div id="idOption" class = "box3-2">
+    <ol class="optMenu">
+        <div class="optTitle">Food Option</div>
+        <li class="optName">
+            곱빼기 +1000
+            <input class="optCheck2" id= "X2" type="checkbox">
+        </li>
+        <li class="optName">
+            고수추가 +0
+            <input class="optCheck2" id= "Gosu" type="checkbox">
+        </li>
+        <li class="optName">
+            <input class="optCheck2" id = "OK2" type="button" value="OK!">
+        </li>
+    </ol>
+    </div>
+
+
+  <!-- 2. Price -->
+    <div id="idPrice" class = "box4">
+        
+        <!-- 주문내역 -->
+        <div id="orderList1" class = "priceStyle margin">
+               주문내역
+            <template id ="temList1">
+                <div class="orderMain">아메리카노</div>
+            </template>
+            <template id="temList1-1">
+                <div class="optHouse"></div>
+            </template> 
+        </div>
+
+        <!-- 수량 --> 
+        <div id="orderList2" class = "priceStyle margin">   
+                <div>수량</div>
+            <template id = "temList2">
+                <div>
+                <span class="orderCount">1</span>
+                <button class = 'up1'>+</button>
+                <button class = 'down1'>-</button>
+                </div>
+            </template>
+        </div>
+        <!-- 가격 -->
+        <div id="orderList3" class = "priceStyle margin">
+               가격
+            <template id ="temList3">
+                <div class="orderPrice">2000</div>
+            </template>
+        </div>
+        <!-- 총가격 -->
+        <div id="orderList4"  class="margin">
+            <template id = "temList4">
+                <div class="totalPrice"></div>
+            </template>
+        </div>
+        <!-- 버튼 -->
+        <div id="orderList5">
+            <button class = "deleteBtn">Refresh!</button>
+      
+    </div>
+
+    </div>
+
+ 
+    
+
+    <!-- 3. Cal. -->
+    <div id="Cal" class = "box5">
+
+        <button class="calBtnCash">현금</button>
+        <button class="calBtnCard">카드</button>
+
+    </div>
+
+    <!-- 4. 현금계산시 -->
+    <div class="cash">
+            cash
+            <div class="cashContainer">
+    
+                <!-- 계산기 -->
+                <div class="cashCal">
+                <table border="1">
+                        <tr>
+                            <td colspan="4">
+                                <input class="tbClass" type="text" id="display" placeholder="계산기">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <input class="tbClass" type="text" id="result" placeholder="결과값">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdNum" colspan="3" onclick="reset()">AC</td>
+                            <td class="tdNum" onclick="add('/')">/</td>
+                        </tr>
+                        <tr>
+                            <td class="tdNum" onclick="add(7)">7</td>
+                            <td class="tdNum" onclick="add(8)">8</td>
+                            <td class="tdNum" onclick="add(9)">9</td>
+                            <td class="tdNum" onclick="add('*')">*</td>
+                        </tr>
+                        <tr>
+                            <td class="tdNum" onclick="add(4)">4</td>
+                            <td class="tdNum" onclick="add(5)">5</td>
+                            <td class="tdNum" onclick="add(6)">6</td>
+                            <td class="tdNum" onclick="add('-')">-</td>
+                        </tr>
+                        <tr>
+                            <td class="tdNum" onclick="add(1)">1</td>
+                            <td class="tdNum" onclick="add(2)">2</td>
+                            <td class="tdNum" onclick="add(3)">3</td>
+                            <td class="tdNum" onclick="add('+')">+</td>
+                        </tr>
+                        <tr>
+                            <td class="tdNum" colspan="2" onclick="add(0)">0</td>
+                            <td class="tdNum" onclick="add('.')">.</td>
+                            <td class="tdNum" onclick="calculate(), inputFirst()">=</td>
+                        </tr>
+                    </table>
+                </div>
+    
+                <!-- Price에서 넘어온 값 -->
+                <div class="cashInput2">
+                    <div id="inputPrice"></div>
+                </div>
+    
+                <!-- 계산기에서 넘어온 값 - Price값 -->
+                <div class="cashChange">
+                   <div id="inputChange"></div>
+                </div>
+    
+                <!-- 영수증 출력하는 버튼 -->
+                <div class="cashReceipt">
+                    <button id="receiptBtn">Receipt</button>
+                </div>
+    
+                <!-- 결제하기 버튼 -->
+                <div class="cashPayment">
+                    <button id="paymentBtn">Payment</button>
+                </div>
+    
+            </div>
+        </div>
+    
+    <!-- 5. 카드계산시 -->
+    <div class="card">
+        <span class="cardName">Insert Your Card!</span>
+    </div>
+
+</div>
+
+
+    <script src="javascript.js".js></script>
+    <script src="POSDATA.js".js></script>
+    <script src="button.js"></script>
+    <script src="cal.js"></script>
+    <script src="opt.js"></script>
+</body>
+</html>

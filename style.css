@@ -1,0 +1,226 @@
+
+/*.전체바디  */
+
+  
+
+#template {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1em;
+  
+}
+
+/* 1.메뉴 칸 */
+.box1 {
+    grid-column:1;
+    grid-row:1/7;
+    border: 4px dashed #009432;
+}
+
+/* 2.setMenu 칸*/
+
+.box2 {
+    border: 4px dashed #4727fc;
+    text-align: center;
+    
+    grid-column:1;
+    grid-row:7/10; 
+}
+
+.setName {
+    display: inline-block; vertical-align: middle;
+    color: rgb(60, 0, 170);
+    font-weight: 1000;
+}
+
+/* 3. 옵션칸 */
+
+.box3 {
+ 
+}
+
+/* 5. 계산기 칸  */
+.box5 {
+    border: 4px dashed #e84118;
+    /* 4 ==>> 위에 길이 조정 14==>밑에 길이 조정 */
+    grid-row:7/10;    
+}
+
+
+/* 계산기 */
+
+
+.calBtnCash,
+.calBtnCard {
+    border: 0;
+    outline: 0;
+    font-family: 'Gugi', cursive;    
+    cursor: pointer;
+    position: relative;
+    top: auto;
+    left: 0%;
+    right: 5%;
+    text-align: center;
+    width: 50%;
+    /* height: 50px; */
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-right:-4px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s ease;
+}
+
+.calBtnCash:hover,
+.calBtnCard:hover {
+    background-color: rgb(255, 64, 64);
+    font-family: 'Gugi', cursive;    
+    color: #f5f6fa;
+    height: 50px;
+
+}
+
+/* cash */
+
+.cash {
+    display: none;
+}
+
+
+
+/* Cash 눌렀을 때 */
+.cashClicked {
+    /* background: #eee; */
+    display: block;
+    position:absolute;
+    left: 10%;
+    top: 10%;
+    width:340px;
+    height: 100px;
+}
+
+/* Cash 눌렀을 때 나오는 창들 */
+.cashContainer {
+    border: dotted;
+    height: 400px;
+    width: 600px;
+    background-color: #dfe6e9;
+    padding: 3px;
+
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+
+}
+.cashCal{
+    border: solid;
+    margin: 1px;
+    grid-column : 1/3;
+    grid-row: 1/6;
+
+}
+
+.cashInput2{
+    border: solid;
+    margin: 1px;
+    grid-column: 3/5;
+    grid-row: 1/2;
+ 
+}
+.cashChange{
+    border: solid;
+    margin: 1px;
+    grid-column: 3/5;
+    grid-row: 2/3;
+
+}
+
+.cashReceipt {
+    border: solid;
+    margin: 1px;
+    grid-column: 3/4;
+    grid-row: 3/5;
+
+}
+
+.cashPayment {
+    border: solid;
+    margin: 1px;
+    grid-column: 4/5;
+    grid-row: 3/5;
+
+
+}
+
+#inputPrice {
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    top: 30%;
+}
+
+#inputChange {
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    top: 30%;
+}
+
+
+/* 버튼들 */
+
+#receiptBtn {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    
+}
+
+#paymentBtn {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+
+.off {
+    visibility: hidden;
+}
+
+
+/* Card */
+.card {
+    display: none;   
+}
+
+/* Card 눌렀을 때 */
+.cardClicked {
+    display: block;
+    position:absolute;
+    left:15%;
+    top: 30%;
+    
+}
+
+.cardName {
+    border: dotted 5px;
+    background-color: #ff000046;   
+    color: red;  
+    text-align: center;
+    font-size: 100px;
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+}
+
+
+/* orderCount GRID */
+
+#temList2 {
+
+}

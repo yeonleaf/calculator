@@ -1,0 +1,175 @@
+body {
+    font-family: 'Gugi', cursive;
+}
+
+ul {
+list-style: none;
+}
+
+.middleTitle {
+    text-align: left;
+    font-size: 40px;
+    color: #009432;
+    
+}
+
+.box1 {
+    text-align: center;
+    padding: 1%;
+    
+}
+
+#idMenu {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    /* grid-template-rows: 20% 20% 20% 20% 20%; */
+    color: #009432;
+    
+    
+}
+
+.middleTitle {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    
+}
+
+.menuName {
+    font-size: 20px;
+    
+}
+
+.Bev {
+    grid-column: 1/2;
+    
+    padding: 0;
+    margin: 0;
+
+}
+
+.Food {
+    grid-column: 2/3;
+
+    padding: 0;
+    margin: 0;
+ 
+}
+
+.Dessert {
+    grid-column: 3/4;
+
+    padding: 0;
+    margin: 0;
+    
+}
+
+.menuContent {
+    margin: 2%;
+
+    
+}
+
+.menuBtn {
+    height: 100px;
+    width: 100%;
+    box-shadow: 3px 1px 1px rgb(168, 168, 168);
+}
+
+.menuBtn {
+    font-family: 'Gugi', cursive;
+    border:2.5px solid #009432;
+    float:left;
+    text-align:center;
+    cursor:pointer;
+    position:relative;
+    box-sizing:border-box;
+    overflow:hidden;
+    margin: 3% 3% 1% 1%;
+    transition: all .5s ease;
+    
+    font-weight: bolder;
+    color: #009432;
+    font-size: 20px;
+  }
+
+.menuBtn:hover {
+    color:#009432;
+    left:0;top:0;
+    background-color: rgb(255, 165, 2);
+    font-family: 'Gugi', cursive;    
+    font-size: 30px;
+    color: #f5f6fa;
+}
+
+.menuBtnDessert {
+    height: 100px;
+    width: 100%;
+    box-shadow: 3px 1px 1px rgb(168, 168, 168);
+}
+
+.menuBtnDessert {
+    font-family: 'Gugi', cursive;
+    border:2.5px solid #009432;
+    float:left;
+    text-align:center;
+    cursor:pointer;
+    position:relative;
+    box-sizing:border-box;
+    overflow:hidden;
+    margin: 3% 3% 1% 1%;
+    transition: all .5s ease;
+    
+    font-weight: bolder;
+    color: #009432;
+    font-size: 20px;
+  }
+
+.menuBtnDessert:hover {
+    color:#009432;
+    left:0;top:0;
+    background-color: rgb(255, 165, 2);
+    font-family: 'Gugi', cursive;    
+    font-size: 30px;
+    color: #f5f6fa;
+}
+
+#americano:hover {
+    background-image: url("americano.jpg");      
+}
+
+#latte:hover {
+    background-image: url("latte.jpg");      
+    color: #4e1709;  
+}
+
+#beer:hover {
+    background-image: url("beer.jpg");      
+    
+}
+
+#nasi:hover {
+    background-image: url("nasi.jpg");     
+    color: #4e1709;  
+}
+
+#mi:hover {
+    background-image: url("migo.jpg");      
+}
+
+#satte:hover {
+    background-image: url("satte.jpg");      
+}
+
+#tira:hover {
+    background-image: url("tira.jpg");      
+}
+
+#waf:hover {
+    background-image: url("waf.jpg");   
+    color: #4e1709;   
+}
+
+#ice:hover {
+    background-image: url("ice.jpg");      
+    color: #4e1709;  
+}
